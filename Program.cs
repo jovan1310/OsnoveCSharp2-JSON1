@@ -13,7 +13,7 @@ namespace OsnoveCSharp2_JSON1
     {
         static void Main(string[] args)
         {
-            // U promenljivoj jsonPodaciZaUpis je potrebno mapirati polja klase sa vrednostima. Potrebno je da imena polja u promenljivoj budu ista kao one koje imaju polja u klase.
+            // U promenljivoj jsonPodaciZaUpis je potrebno mapirati polja klase sa vrednostima. Potrebno je da imena polja u promenljivoj budu ista kao one koje imaju polja u klasi.
             string jsonPodaciZaUpis = "{\"ImeProizvoda\": \"Laptop\", \"CenaProizvoda\": 859.57, \"OznakeProizvoda\": [\"Elektronika\",\"Racunari\"]}";
             // U promenljivoj proizvod1 , koja predstavlja nas proizvod - odnosno objekt, unosimo(upisujemo) mapirane vrednosti promenljive jsonPodaciZaUpis.
             Proizvod proizvod1 = JsonConvert.DeserializeObject<Proizvod>(jsonPodaciZaUpis);
